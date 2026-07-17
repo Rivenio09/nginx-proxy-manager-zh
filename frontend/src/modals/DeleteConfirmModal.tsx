@@ -55,7 +55,7 @@ const DeleteConfirmModal = EasyModal.create(
 					<div className="text-center mb-3">
 						<svg
 							role="img"
-							aria-label="warning icon"
+							aria-label="警告图标"
 							xmlns="http://www.w3.org/2000/svg"
 							className="icon mb-2 text-danger icon-lg"
 							width="24"

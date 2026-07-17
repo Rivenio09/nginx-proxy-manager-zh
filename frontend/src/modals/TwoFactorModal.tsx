@@ -112,7 +112,7 @@ const TwoFactorModal = EasyModal.create(({ id, visible, remove }: Props) => {
 			return (
 				<div className="text-center py-4">
 					<div className="spinner-border" role="status">
-						<span className="visually-hidden">Loading...</span>
+						<span className="visually-hidden">加载中...</span>
 					</div>
 				</div>
 			);

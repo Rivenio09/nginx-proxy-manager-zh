@@ -21,7 +21,7 @@ export function SiteHeader() {
 					data-bs-target="#navbar-menu"
 					aria-controls="navbar-menu"
 					aria-expanded="false"
-					aria-label="Toggle navigation"
+					aria-label="切换导航栏"
 				>
 					<span className="navbar-toggler-icon" />
 				</button>
@@ -54,7 +54,7 @@ export function SiteHeader() {
 								href="/"
 								className="nav-link d-flex lh-1"
 								data-bs-toggle="dropdown"
-								aria-label="Open user menu"
+								aria-label="打开用户菜单"
 							>
 								<span
 									className="avatar avatar-sm"

@@ -67,7 +67,7 @@ export function LocationsFields({ initialValues, name = "locations" }: Props) {
 						<div className="row">
 							<div className="col-md-10">
 								<div className="input-group mb-3">
-									<span className="input-group-text">Location</span>
+									<span className="input-group-text">路径规则</span>
 									<input
 										type="text"
 										className="form-control"
@@ -82,7 +82,7 @@ export function LocationsFields({ initialValues, name = "locations" }: Props) {
 								<button
 									type="button"
 									className="btn p-0"
-									title="Advanced"
+									title="高级设置"
 									onClick={() => toggleAdvVisible(idx)}
 								>
 									<IconSettings size={20} />

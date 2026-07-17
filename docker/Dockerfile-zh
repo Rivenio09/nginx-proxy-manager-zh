@@ -1,0 +1,15 @@
+# Build the frontend first with: ./scripts/ci/frontend-build
+ARG NPM_VERSION=2.15.1
+FROM jc21/nginx-proxy-manager:${NPM_VERSION}
+
+ARG BUILD_DATE
+ARG BUILD_COMMIT
+
+RUN rm -rf /app/frontend
+COPY frontend/dist /app/frontend
+
+LABEL org.opencontainers.image.title="Nginx Proxy Manager 中文版" \
+	org.opencontainers.image.description="使用简体中文前端的 Nginx Proxy Manager" \
+	org.opencontainers.image.source="https://github.com/riwujiu/nginx-proxy-manager-zh" \
+	org.opencontainers.image.revision="${BUILD_COMMIT}" \
+	org.opencontainers.image.created="${BUILD_DATE}"

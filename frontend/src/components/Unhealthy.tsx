@@ -8,8 +8,8 @@ export function Unhealthy() {
 					<div className="empty-img">
 						<img src="/images/unhealthy.svg" alt="" />
 					</div>
-					<p className="empty-title">The API is not healthy.</p>
-					<p className="empty-subtitle text-secondary">We'll keep checking and hope to be back soon!</p>
+					<p className="empty-title">API 状态异常。</p>
+					<p className="empty-subtitle text-secondary">我们会持续检查，请稍后再试。</p>
 				</div>
 			</div>
 		</Page>

@@ -7,7 +7,7 @@ function EmptyRow({ tableInstance }: Props) {
 	return (
 		<tr>
 			<td colSpan={tableInstance.getVisibleFlatColumns().length}>
-				<p className="text-center">There are no items</p>
+				<p className="text-center">暂无项目</p>
 			</td>
 		</tr>
 	);

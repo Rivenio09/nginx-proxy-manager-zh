@@ -82,7 +82,7 @@ const getFlagCodeForLocale = (locale?: string) => {
 };
 
 const getLocale = (short = false) => {
-  let loc = window.localStorage.getItem("locale");
+  let loc = window.localStorage?.getItem("locale");
   if (!loc) {
     loc = document.documentElement.lang;
   }
@@ -91,7 +91,7 @@ const getLocale = (short = false) => {
   }
   // finally, fallback
   if (!loc) {
-    loc = "en";
+    loc = "zh-CN";
   }
   return loc;
 };
