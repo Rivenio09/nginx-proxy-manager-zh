@@ -4,6 +4,7 @@ import { useAuthState } from "src/context";
 import { useUser } from "src/hooks";
 import { T } from "src/locale";
 import { showChangePasswordModal, showTwoFactorModal, showUserModal } from "src/modals";
+import { getAvatarUrl } from "src/modules/Avatar";
 import styles from "./SiteHeader.module.css";
 
 export function SiteHeader() {
@@ -59,7 +60,7 @@ export function SiteHeader() {
 								<span
 									className="avatar avatar-sm"
 									style={{
-										backgroundImage: `url(${currentUser?.avatar || "/images/default-avatar.jpg"})`,
+										backgroundImage: `url(${getAvatarUrl(currentUser?.avatar) || "/images/default-avatar.jpg"})`,
 									}}
 								/>
 								<div className="d-none d-xl-block ps-2">
@@ -72,7 +73,10 @@ export function SiteHeader() {
 							<div className="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
 								<div className="d-md-none">
 									{/* biome-ignore lint/a11y/noStaticElementInteractions lint/a11y/useKeyWithClickEvents: This div is not interactive. */}
-									<div className="p-2 pb-1 pe-1 d-flex align-items-center" onClick={e => e.stopPropagation()}>
+									<div
+										className="p-2 pb-1 pe-1 d-flex align-items-center"
+										onClick={(e) => e.stopPropagation()}
+									>
 										<div className="ps-2 pe-1 me-auto">
 											<div>{currentUser?.nickname}</div>
 											<div className="mt-1 small text-secondary text-nowrap">

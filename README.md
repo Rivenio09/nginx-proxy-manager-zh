@@ -2,13 +2,27 @@
 	<img src="https://nginxproxymanager.com/github.png">
 	<br><br>
 	<img src="https://img.shields.io/badge/version-2.15.1-green.svg?style=for-the-badge">
-	<a href="https://hub.docker.com/repository/docker/jc21/nginx-proxy-manager">
-		<img src="https://img.shields.io/docker/stars/jc21/nginx-proxy-manager.svg?style=for-the-badge">
+	<a href="https://hub.docker.com/r/riwujiu/nginx-proxy-manager-zh">
+		<img src="https://img.shields.io/docker/stars/riwujiu/nginx-proxy-manager-zh.svg?style=for-the-badge">
 	</a>
-	<a href="https://hub.docker.com/repository/docker/jc21/nginx-proxy-manager">
-		<img src="https://img.shields.io/docker/pulls/jc21/nginx-proxy-manager.svg?style=for-the-badge">
+	<a href="https://hub.docker.com/r/riwujiu/nginx-proxy-manager-zh">
+		<img src="https://img.shields.io/docker/pulls/riwujiu/nginx-proxy-manager-zh.svg?style=for-the-badge">
 	</a>
 </p>
+
+## Nginx Proxy Manager 中文版
+
+本分支基于官方 Nginx Proxy Manager `2.15.1`，仅修改和替换前端文件，后端完整继承官方镜像。
+
+- 默认使用简体中文，中文语言包与英文基准文案完整对齐。
+- 补充双因素认证、重定向状态码等新版界面的中文翻译。
+- 将前端收到的 Gravatar 头像地址自动替换为国内访问更稳定的
+  [Cravatar](https://cravatar.com/document/how-to-use-cravatar) 地址。
+- Docker 镜像：`riwujiu/nginx-proxy-manager-zh:2.15.1`。
+- `docker/Dockerfile-zh` 以同版本官方镜像为基础，只覆盖 `/app/frontend`。
+
+源代码保留官方项目的版权与许可证；上游仓库：
+[NginxProxyManager/nginx-proxy-manager](https://github.com/NginxProxyManager/nginx-proxy-manager)。
 
 This project comes as a pre-built Docker image that enables you to easily forward to your websites
 running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.
@@ -61,7 +75,7 @@ I won't go into too much detail here, but here are the basics for someone new to
 ```yml
 services:
   app:
-    image: 'docker.io/jc21/nginx-proxy-manager:latest'
+    image: 'docker.io/riwujiu/nginx-proxy-manager-zh:2.15.1'
     restart: unless-stopped
     ports:
       - '80:80'
