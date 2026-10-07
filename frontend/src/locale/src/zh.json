@@ -71,6 +71,12 @@
 	"access-list.help.rules-order": {
 		"defaultMessage": " 允许 (allow) 和禁止 (deny) 规则将按照它们定义的顺序执行。"
 	},
+	"access-list.inherit": {
+		"defaultMessage": "继承代理主机的访问列表"
+	},
+	"access-list.inherit.subtitle": {
+		"defaultMessage": "使用代理主机的访问列表"
+	},
 	"access-list.pass-auth": {
 		"defaultMessage": "将认证传递给上游"
 	},
@@ -101,6 +107,9 @@
 	"action.allow": {
 		"defaultMessage": "允许"
 	},
+	"action.clear": {
+		"defaultMessage": "清除"
+	},
 	"action.close": {
 		"defaultMessage": "关闭"
 	},
@@ -121,6 +130,9 @@
 	},
 	"action.enable": {
 		"defaultMessage": "启用"
+	},
+	"action.logs": {
+		"defaultMessage": "日志"
 	},
 	"action.permissions": {
 		"defaultMessage": "权限"
@@ -265,6 +277,9 @@
 	},
 	"column.email": {
 		"defaultMessage": "邮箱"
+	},
+	"column.error": {
+		"defaultMessage": "错误"
 	},
 	"column.event": {
 		"defaultMessage": "事件"
@@ -461,6 +476,12 @@
 	"loading": {
 		"defaultMessage": "加载中···"
 	},
+	"location.advanced-config": {
+		"defaultMessage": "已配置自定义 Nginx 设置"
+	},
+	"location.filter": {
+		"defaultMessage": "按路径或目标筛选"
+	},
 	"login.2fa-code": {
 		"defaultMessage": "验证码"
 	},
@@ -478,6 +499,51 @@
 	},
 	"login.title": {
 		"defaultMessage": "登录您的账户"
+	},
+	"logs": {
+		"defaultMessage": "日志"
+	},
+	"logs.channel.access": {
+		"defaultMessage": "访问"
+	},
+	"logs.channel.error": {
+		"defaultMessage": "错误"
+	},
+	"logs.download": {
+		"defaultMessage": "下载"
+	},
+	"logs.empty": {
+		"defaultMessage": "暂无日志记录。"
+	},
+	"logs.level": {
+		"defaultMessage": "级别"
+	},
+	"logs.level.all": {
+		"defaultMessage": "所有级别"
+	},
+	"logs.lines": {
+		"defaultMessage": "行数"
+	},
+	"logs.live": {
+		"defaultMessage": "实时"
+	},
+	"logs.paused": {
+		"defaultMessage": "已暂停"
+	},
+	"logs.refresh": {
+		"defaultMessage": "刷新"
+	},
+	"logs.search-placeholder": {
+		"defaultMessage": "搜索日志…"
+	},
+	"logs.source": {
+		"defaultMessage": "来源"
+	},
+	"logs.source.system": {
+		"defaultMessage": "系统"
+	},
+	"logs.truncated-warning": {
+		"defaultMessage": "仅显示此文件最近的部分内容。"
 	},
 	"nginx-config.label": {
 		"defaultMessage": "自定义 Nginx 配置"

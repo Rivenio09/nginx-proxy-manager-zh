@@ -1,5 +1,5 @@
 # Build the frontend first with: ./scripts/ci/frontend-build
-ARG NPM_VERSION=2.15.1
+ARG NPM_VERSION=2.16.0
 FROM jc21/nginx-proxy-manager:${NPM_VERSION}
 
 ARG BUILD_DATE

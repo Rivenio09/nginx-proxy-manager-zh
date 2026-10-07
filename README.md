@@ -1,7 +1,7 @@
 <p align="center">
 	<img src="https://nginxproxymanager.com/github.png">
 	<br><br>
-	<img src="https://img.shields.io/badge/version-2.15.1-green.svg?style=for-the-badge">
+	<img src="https://img.shields.io/badge/version-2.16.0-green.svg?style=for-the-badge">
 	<a href="https://hub.docker.com/r/riwujiu/nginx-proxy-manager-zh">
 		<img src="https://img.shields.io/docker/stars/riwujiu/nginx-proxy-manager-zh.svg?style=for-the-badge">
 	</a>
