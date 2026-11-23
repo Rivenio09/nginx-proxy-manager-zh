@@ -23,13 +23,15 @@ const runLocaleScripts = () => {
 export default defineConfig({
 	plugins: [
 		{
-			name: 'run-on-start',
+			name: "run-on-start",
+			apply: (_config, { mode }) => mode !== "test",
 			configureServer(_server) {
 				runLocaleScripts();
 			},
 		},
 		{
 			name: "trigger-on-reload",
+			apply: (_config, { mode }) => mode !== "test",
 			configureServer(server) {
 				server.watcher.on("change", (file) => {
 					if (file.includes("locale/src")) {
@@ -57,6 +59,9 @@ export default defineConfig({
 	test: {
 		environment: "happy-dom",
 		setupFiles: ["./vitest-setup.js"],
+		// Node 25+ has a built-in global localStorage (undefined without
+		// --localstorage-file) that shadows happy-dom's; turn it off.
+		execArgv: ["--no-experimental-webstorage"],
 	},
 	assetsInclude: ["**/*.md", "**/*.png", "**/*.svg"],
 });

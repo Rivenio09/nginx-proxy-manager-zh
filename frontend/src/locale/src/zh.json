@@ -437,6 +437,9 @@
 	"footer.github-fork": {
 		"defaultMessage": "在 Github 上复刻 (Fork) 本项目"
 	},
+	"form.unsaved-changes": {
+		"defaultMessage": "有未保存的更改。确定要放弃这些更改吗？"
+	},
 	"host.flags.block-exploits": {
 		"defaultMessage": "阻止常见攻击"
 	},
@@ -641,11 +644,20 @@
 	"password.show": {
 		"defaultMessage": "显示密码"
 	},
+	"permissions.allowed-proxy-hosts": {
+		"defaultMessage": "允许访问的代理主机"
+	},
+	"permissions.allowed-proxy-hosts-help": {
+		"defaultMessage": "允许用户访问由其他用户创建的指定代理主机。用户仍可访问自己创建的主机。"
+	},
 	"permissions.hidden": {
 		"defaultMessage": "隐藏"
 	},
 	"permissions.manage": {
 		"defaultMessage": "管理"
+	},
+	"permissions.no-proxy-hosts": {
+		"defaultMessage": "未找到代理主机"
 	},
 	"permissions.view": {
 		"defaultMessage": "仅查看"
