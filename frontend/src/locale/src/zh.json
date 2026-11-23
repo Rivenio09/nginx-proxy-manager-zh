@@ -435,7 +435,7 @@
 		"defaultMessage": "过期时间: {date}"
 	},
 	"footer.github-fork": {
-		"defaultMessage": "在 Github 上复刻 (Fork) 本项目"
+		"defaultMessage": "在 Github 上 Fork 本项目"
 	},
 	"form.unsaved-changes": {
 		"defaultMessage": "有未保存的更改。确定要放弃这些更改吗？"
